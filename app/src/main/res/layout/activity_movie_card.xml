@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    tools:context=".movie_card"
+    android:background="#ffff">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_round"
+                android:paddingBottom="5dp" />
+
+            <TextView
+                android:id="@+id/image_char"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="#ffff"
+                android:text="  K"
+                android:typeface="monospace"
+                android:fontFamily="cursive"
+                android:textSize="55dp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="15dp"
+                android:paddingBottom="10dp"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                android:textColor="#000000"
+                android:text="demo_tit"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/price_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="45dp"
+                android:textColor="#000000"
+                android:text="demo_300"
+                android:typeface="monospace"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/star_rating"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="364dp"
+                />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="3.5"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/addToCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/edit_round"
+                android:textColor="#ffffff"
+                android:text=" +Cart"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/buy_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="259dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/edit_round"
+                android:textColor="#ffffff"
+                android:text="Buy Now"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
